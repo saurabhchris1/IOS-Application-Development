@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZJv-Q0-SqI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--3D Quiz-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pxg-gd-jno">
+                                <rect key="frame" x="0.0" y="98" width="375" height="569"/>
+                            </sceneKitView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pxg-gd-jno" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AaW-4g-sPB"/>
+                            <constraint firstItem="Pxg-gd-jno" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Pc4-4a-k6x"/>
+                            <constraint firstAttribute="bottom" secondItem="Pxg-gd-jno" secondAttribute="bottom" id="c81-ZL-cpg"/>
+                            <constraint firstItem="Pxg-gd-jno" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kQS-Ir-fJY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="3D Quiz" prompt="Quiz App" id="0la-dy-SF6"/>
+                    <connections>
+                        <outlet property="sceneKitView" destination="Pxg-gd-jno" id="f6H-Nj-HW2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955.07246376811599" y="759.375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ePI-Zt-yyz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZJv-Q0-SqI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N78-6Q-1ZG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VVY-wK-dkj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zoa-QH-USC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="759.375"/>
+        </scene>
+    </scenes>
+</document>
